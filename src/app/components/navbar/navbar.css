@@ -1,0 +1,20 @@
+.navbar-liga {
+  background-color: #faf9f6;
+  border-bottom: 1px solid #eceae4;
+}
+
+.navbar-liga .nav-link.active {
+  border-bottom: 2px solid #1e242b;
+  font-weight: 600;
+}
+
+.btn-registro {
+  background-color: #279b68;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-registro:hover {
+  background-color: #1f8256;
+  color: #ffffff;
+}

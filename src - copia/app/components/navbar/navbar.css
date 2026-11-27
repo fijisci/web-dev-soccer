@@ -1,0 +1,39 @@
+.custom-stacked-nav {
+  background-color: #faf9f6;
+  /*background-color: #f5cded;*/ 
+  /*background: linear-gradient(90deg, #fbe0f6, #fbaeec ); */
+  padding-top: 0.75rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.nav-logo {
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.nav-logo:hover {
+  transform: scale(1.03);
+}
+
+/* Separador sutil entre el escudo y el menú */
+.nav-links-wrapper {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 0.6rem 0;
+  margin-top: 0.5rem;
+}
+
+.custom-stacked-nav .nav-link {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+}
+
+.custom-stacked-nav .nav-link:hover,
+.custom-stacked-nav .nav-link.active {
+  color: #1982c4; /* O cualquiera de los tonos de tu paleta */
+}

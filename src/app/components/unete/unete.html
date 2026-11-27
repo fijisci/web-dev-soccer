@@ -1,0 +1,64 @@
+<div class="modal fade" id="modalUnete" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 modal-gris p-4 position-relative">
+      
+      <button
+        type="button"
+        class="btn-close position-absolute top-0 end-0 m-3"
+        data-bs-dismiss="modal"
+        aria-label="Cerrar"
+        (click)="seleccionarOpcion('seleccion')"
+      ></button>
+
+      <div class="text-center mb-4">
+        <span class="bg-white fw-bold fs-4 px-5 py-2 rounded-4 d-inline-block shadow-sm">
+          ¡ÚNETE!
+        </span>
+      </div>
+
+      <!-- opciones -->
+      <div class="row text-center g-4 my-2">
+        <!-- individual -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+          <div
+            class="circulo-opcion bg-white rounded-circle d-flex align-items-center justify-content-center shadow-sm mb-3"
+            role="button"
+            (click)="seleccionarOpcion('individual')"
+          >
+            <i class="bi bi-person-fill text-dark icono-gigante"></i>
+          </div>
+          <button
+            type="button"
+            class="btn bg-white fw-bold rounded-pill px-4 py-2 shadow-sm"
+            (click)="seleccionarOpcion('individual')"
+          >
+            POR TU CUENTA
+          </button>
+        </div>
+
+        <!-- equipo -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+          <div
+            class="circulo-opcion bg-white rounded-circle d-flex align-items-center justify-content-center shadow-sm mb-3"
+            role="button"
+            (click)="seleccionarOpcion('equipo')"
+          >
+            <i class="bi bi-people-fill text-dark icono-gigante"></i>
+          </div>
+          <button
+            type="button"
+            class="btn bg-white fw-bold rounded-pill px-4 py-2 shadow-sm"
+            (click)="seleccionarOpcion('equipo')"
+          >
+            O CON TU EQUIPO
+          </button>
+        </div>
+      </div>
+
+      <p class="text-center text-secondary fw-semibold small mt-4 mb-0">
+        *CADA SOLICITUD QUEDA PENDIENTE A REVISIÓN
+      </p>
+
+    </div>
+  </div>
+</div>

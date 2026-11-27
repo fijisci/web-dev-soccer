@@ -1,0 +1,48 @@
+.hero-wrapper {
+  background-color: #faf9f6;
+}
+
+.rainbow-strip {
+  background: linear-gradient(
+    90deg,
+    #e40303 0%,
+    #ff8c00 20%,
+    #ffed00 40%,
+    #008026 60%,
+    #24408e 80%,
+    #732982 100%
+  );
+  background-size: 100% 75px;
+  background-repeat: no-repeat;
+  background-position: center 45%;
+}
+
+.section-gray {
+  background-color: #cbd2d9;
+  border-radius: 1.5rem;
+}
+
+.title-pill {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  letter-spacing: 1px;
+}
+
+.carousel-photo {
+  height: 300px;
+  object-fit: cover;
+}
+
+.icon-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialist-card {
+  max-width: 340px;
+}

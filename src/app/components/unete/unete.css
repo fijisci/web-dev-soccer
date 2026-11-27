@@ -1,0 +1,17 @@
+.modal-gris {
+  background-color: #cbd2d9;
+}
+
+.circulo-opcion {
+  width: 190px;
+  height: 190px;
+  transition: transform 0.2s;
+}
+
+.circulo-opcion:hover {
+  transform: scale(1.05);
+}
+
+.icono-gigante {
+  font-size: 6rem;
+}

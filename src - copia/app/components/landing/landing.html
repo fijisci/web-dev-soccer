@@ -1,0 +1,53 @@
+<section class="hero d-flex align-items-center px-3">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-11 col-lg-9 col-xl-8">
+
+        <h1 class="display-1 text-white text-center fw-bold mb-4">
+          Liga de Fútbol Mujeres Diversas México
+        </h1>
+
+        <p class="lead text-white text-center mt-5 fst-italic ">
+          Más que fútbol, una comunidad
+        </p>
+
+        <!--p class="lead text-white text-center mb-5 fst-italic ">
+          By Nallely Meza 
+        </p-->
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container custom-stacked-nav mt-5">
+    
+    <!--renderiza si ya llegaron partidos -->
+    @if (ultimosPartidos().length > 0) {
+      <div id="carruselPartidos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Iteramos sobre los 5 partidos -->
+          @for (partido of ultimosPartidos(); track partido.id; let esPrimero = $first) {
+            <div class="carousel-item" [class.active]="esPrimero">
+              <div class="card text-center mx-auto" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{ partido.equipoLocal }} vs {{ partido.equipoVisitante }}</h5>
+                  <p class="card-text fw-bold fs-4">{{ partido.golesLocal }} - {{ partido.golesVisitante }}</p>
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselPartidos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselPartidos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    }
+
+  </div>
+</section>
